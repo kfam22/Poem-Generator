@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Poem from './components/Poem'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Hello World
-        </a>
+      <header>
+        <p>love-letters-and-poetry</p>
+        <p>data from <a target="_blank" href='https://poetrydb.org/index.html' >poetrydb.org</a></p>
       </header>
+      <div className='title'>
+        <h1><span className='love'>Love</span> me, <span className='not'>Love me</span> not</h1>
+        <h2> poems to inspire your next love or not love letter.</h2>
+      </div>
+      <Poem />
     </div>
   );
 }
