@@ -87,6 +87,13 @@ button {
  background-size: cover ;
 }
 
+@media (max-width: 600px) {
+  .poemContainer{
+    margin: 3rem;
+    padding: 1.6rem;
+  }
+}
+
 .poemTitle{
  font-size: 2.6rem;
  font-family: 'Cedarville Cursive', cursive;
